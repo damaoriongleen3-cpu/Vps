@@ -27,27 +27,13 @@ RUN curl -sS https://bootstrap.pypa.io/get-pip.py | python3.11 && \
 
 
 RUN python3.11 -m pip install --no-cache-dir \
-    mtranslate \
-    google-genai \
     requests \
-    g4f \
-    mutagen \
-    tgcalls==3.0.0.dev6 \
-    py-tgcalls~=2.2.11 \
-    telethon \
-    aiosqlite \
-    aiocron \
-    emoji \
-    pytz \
-    gtts \
-    qrcode \
-    Telegram \
-    aiohttp \
-    fake_useragent \
+    httpx[http2] \
+    odaislib \
     user_agent \
-    hijri_converter \
-    gpytranslate \
-    watchdog
+    telethon \
+    python-dotenv \
+    loguru
 
 
 WORKDIR /root
